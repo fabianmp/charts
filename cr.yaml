@@ -1,0 +1,5 @@
+charts-repo: https://fabianmp.github.io/charts
+index-path: index.yaml
+owner: fabianmp
+pages-branch: main
+release-name-template: v{{ .Version }}
