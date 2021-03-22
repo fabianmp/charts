@@ -94,7 +94,7 @@ helm repo update</pre>
     },
     mounted() {
       axios
-        .get('/index.yaml')
+        .get('index.yaml')
         .then(response => (this.charts.splice(0, this.charts.length, ...loadReleases(response.data))))
     }
   })
