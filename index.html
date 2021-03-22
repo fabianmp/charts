@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Helm Charts @ fabianmp</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.0.0/dist/js-yaml.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js"></script>
+</head>
+
+<body>
+  <div class="hero is-primary is-small block">
+    <div class="hero-body container">
+      <p class="title">Helm Charts @ fabianmp</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="block">
+      <article class="message is-dark">
+        <pre class="message-body">helm repo add fabianmp https://github.com/fabianmp/charts
+helm repo update</pre>
+      </article>
+    </div>
+    <div class="block" id="app">
+      <div class="card block" v-for="chart in charts">
+        <div class="card-content">
+          <div class="content">
+            <div class="columns">
+              <div class="column">
+                <p class="title is-4">
+                  <a v-bind:href="chart.versions[chart.currentVersion].home">{{ chart.name }}</a>
+                </p>
+                <p class="subtitle is-6">{{ chart.versions[chart.currentVersion].description }}</p>
+              </div>
+              <div class="column has-text-right">
+                <div class="select">
+                  <select v-model="chart.currentVersion">
+                    <option v-for="(version, index) in chart.versions" v-bind:value="index">{{ version.version }} ({{ version.appVersion }})</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="field is-grouped is-grouped-multiline">
+              <div class="control">
+                <div class="tags has-addons">
+                  <span class="tag is-dark">Helm Version</span>
+                  <span class="tag">{{ chart.versions[chart.currentVersion].apiVersion }}</span>
+                </div>
+              </div>
+              <div class="control">
+                <div class="tags has-addons">
+                  <span class="tag is-primary">Chart Version</span>
+                  <span class="tag">{{ chart.versions[chart.currentVersion].version }}</span>
+                </div>
+              </div>
+              <div class="control">
+                <div class="tags has-addons">
+                  <span class="tag is-success">App Version</span>
+                  <span class="tag">{{ chart.versions[chart.currentVersion].appVersion }}</span>
+                </div>
+              </div>
+              <div class="control">
+                <div class="tags has-addons">
+                  <span class="tag is-warning">Created</span>
+                  <span class="tag">{{ new Date(chart.versions[chart.currentVersion].created).toLocaleString() }}</span>
+                </div>
+              </div>
+            </div>
+            <pre>helm install [RELEASE_NAME] fabianmp/{{ chart.name }} --version {{ chart.versions[chart.currentVersion].version }}</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  function loadReleases(data) {
+    const entries = jsyaml.load(data).entries;
+    const charts = Object.entries(entries).map(([name, versions]) => ({
+      name: name,
+      currentVersion: 0,
+      versions: versions
+    }));
+    console.log(charts);
+    return charts;
+  }
+  var app = new Vue({
+    el: '#app',
+    data: {
+      charts: []
+    },
+    mounted() {
+      axios
+        .get('/index.yaml')
+        .then(response => (this.charts.splice(0, this.charts.length, ...loadReleases(response.data))))
+    }
+  })
+</script>
+
+</html>
