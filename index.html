@@ -6,9 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Helm Charts @ fabianmp</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css">
   <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.0.0/dist/js-yaml.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/js/fontawesome.min.js"></script>
 </head>
 
 <body>
@@ -31,9 +33,15 @@ helm repo update</pre>
             <div class="columns">
               <div class="column">
                 <p class="title is-4">
-                  <a v-bind:href="chart.versions[chart.currentVersion].home">{{ chart.name }}</a>
+                  <a v-bind:href="chart.versions[chart.currentVersion].sources[0]">{{ chart.name }}</a>
                 </p>
                 <p class="subtitle is-6">{{ chart.versions[chart.currentVersion].description }}</p>
+                <span class="icon-text">
+                  <span class="icon">
+                    <i class="fas fa-home"></i>
+                  </span>
+                  <span><a href="{{ chart.versions[chart.currentVersion].home }}">{{ chart.versions[chart.currentVersion].home }}</a></span>
+                </span>
               </div>
               <div class="column has-text-right">
                 <div class="select">
