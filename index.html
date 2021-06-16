@@ -40,7 +40,7 @@ helm repo update</pre>
                   <span class="icon">
                     <i class="fas fa-home"></i>
                   </span>
-                  <span><a href="{{ chart.versions[chart.currentVersion].home }}">{{ chart.versions[chart.currentVersion].home }}</a></span>
+                  <span><a v-bind:href="chart.versions[chart.currentVersion].home">{{ chart.versions[chart.currentVersion].home }}</a></span>
                 </span>
               </div>
               <div class="column has-text-right">
