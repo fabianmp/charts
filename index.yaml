@@ -1,5 +1,26 @@
 apiVersion: v1
 entries:
+  hsds:
+  - apiVersion: v2
+    appVersion: v0.6.3
+    created: "2022-03-04T11:27:41.7079968+01:00"
+    description: A Helm chart for [HSDS](https://github.com/HDFGroup/hsds)
+    digest: a74802bc4c3ababbeab61957fa1594caf1f26aad29f7fc854cb8c1bb7aa8b27c
+    home: https://github.com/HDFGroup/hsds
+    keywords:
+    - HSDS
+    - HDF5
+    maintainers:
+    - email: fabian.zach@methodpark.de
+      name: Fabian Zach
+      url: https://github.com/fabianmp
+    name: hsds
+    sources:
+    - https://github.com/fabianmp/hsds-helm
+    type: application
+    urls:
+    - https://github.com/fabianmp/hsds-helm/releases/download/v0.1.0/hsds-0.1.0.tgz
+    version: 0.1.0
   hsds-viewer:
   - apiVersion: v2
     appVersion: v0.8.0
@@ -282,4 +303,4 @@ entries:
     urls:
     - https://github.com/fabianmp/taiga-helm/releases/download/v0.1.0/taiga-0.1.0.tgz
     version: 0.1.0
-generated: "2021-11-30T13:36:51.4314512+01:00"
+generated: "2022-03-04T11:27:41.7080436+01:00"
