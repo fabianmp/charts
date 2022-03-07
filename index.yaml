@@ -3,6 +3,26 @@ entries:
   hsds:
   - apiVersion: v2
     appVersion: v0.6.3
+    created: "2022-03-07T14:01:18.9917953+01:00"
+    description: A Helm chart for [HSDS](https://github.com/HDFGroup/hsds)
+    digest: 33ef938496c20224fed20cfe876ca5ecc5f041c1e333d70496d03abe3636859a
+    home: https://github.com/HDFGroup/hsds
+    keywords:
+    - HSDS
+    - HDF5
+    maintainers:
+    - email: fabian.zach@methodpark.de
+      name: Fabian Zach
+      url: https://github.com/fabianmp
+    name: hsds
+    sources:
+    - https://github.com/fabianmp/hsds-helm
+    type: application
+    urls:
+    - https://github.com/fabianmp/hsds-helm/releases/download/v0.1.1/hsds-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: v0.6.3
     created: "2022-03-04T11:27:41.7079968+01:00"
     description: A Helm chart for [HSDS](https://github.com/HDFGroup/hsds)
     digest: a74802bc4c3ababbeab61957fa1594caf1f26aad29f7fc854cb8c1bb7aa8b27c
@@ -22,6 +42,26 @@ entries:
     - https://github.com/fabianmp/hsds-helm/releases/download/v0.1.0/hsds-0.1.0.tgz
     version: 0.1.0
   hsds-viewer:
+  - apiVersion: v2
+    appVersion: v0.9.0
+    created: "2022-03-07T13:42:42.4209205+01:00"
+    description: A Helm chart for HSDS-Viewer
+    digest: 12a4e4811d3f02cca7cbc7cd0e21def1a84faa5c4773a90700f934afb6a71a5e
+    home: https://github.com/fabianmp/hsds-viewer
+    keywords:
+    - HSDS
+    - HDF5
+    - frontend
+    maintainers:
+    - email: fabian.zach@methodpark.de
+      name: Fabian Zach
+    name: hsds-viewer
+    sources:
+    - https://github.com/fabianmp/hsds-viewer
+    type: application
+    urls:
+    - https://github.com/fabianmp/hsds-viewer/releases/download/v0.9.0/hsds-viewer-0.9.0.tgz
+    version: 0.9.0
   - apiVersion: v2
     appVersion: v0.8.0
     created: "2021-07-13T16:41:42.1538188+02:00"
@@ -185,6 +225,36 @@ entries:
   taiga:
   - apiVersion: v2
     appVersion: 6.4.2
+    created: "2022-03-07T13:43:22.5275984+01:00"
+    dependencies:
+    - name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 8.6.2
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami
+      version: 8.15.2
+    description: A Helm chart for Taiga
+    digest: 029d97990517e19bd001fcebf47d8b9e37c3312eea817f45172ba70c22db33f2
+    home: https://www.taiga.io/
+    keywords:
+    - taiga
+    - taiga.io
+    - scrum
+    - kanban
+    - project management
+    maintainers:
+    - email: fabian.zach@methodpark.de
+      name: Fabian Zach
+      url: https://github.com/fabianmp
+    name: taiga
+    sources:
+    - https://github.com/fabianmp/taiga-helm
+    type: application
+    urls:
+    - https://github.com/fabianmp/taiga-helm/releases/download/v0.2.3/taiga-0.2.3.tgz
+    version: 0.2.3
+  - apiVersion: v2
+    appVersion: 6.4.2
     created: "2021-11-30T13:36:51.4314213+01:00"
     dependencies:
     - name: postgresql
@@ -303,4 +373,4 @@ entries:
     urls:
     - https://github.com/fabianmp/taiga-helm/releases/download/v0.1.0/taiga-0.1.0.tgz
     version: 0.1.0
-generated: "2022-03-04T11:27:41.7080436+01:00"
+generated: "2022-03-07T13:42:42.4210126+01:00"
