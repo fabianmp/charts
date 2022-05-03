@@ -225,6 +225,36 @@ entries:
   taiga:
   - apiVersion: v2
     appVersion: 6.4.2
+    created: "2022-05-03T10:30:07.8678688+02:00"
+    dependencies:
+    - name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 8.6.2
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami
+      version: 8.15.2
+    description: A Helm chart for Taiga
+    digest: 0a200fe7ca335424ce48376ba0d0ab2c6ed96670008c5725aab87f37beac729f
+    home: https://www.taiga.io/
+    keywords:
+    - taiga
+    - taiga.io
+    - scrum
+    - kanban
+    - project management
+    maintainers:
+    - email: fabian.zach@methodpark.de
+      name: Fabian Zach
+      url: https://github.com/fabianmp
+    name: taiga
+    sources:
+    - https://github.com/fabianmp/taiga-helm
+    type: application
+    urls:
+    - https://github.com/fabianmp/taiga-helm/releases/download/v0.3.0/taiga-0.3.0.tgz
+    version: 0.3.0
+  - apiVersion: v2
+    appVersion: 6.4.2
     created: "2022-05-02T17:58:53.6473609+02:00"
     dependencies:
     - name: postgresql
@@ -463,4 +493,4 @@ entries:
     urls:
     - https://github.com/fabianmp/taiga-helm/releases/download/v0.1.0/taiga-0.1.0.tgz
     version: 0.1.0
-generated: "2022-05-02T17:58:53.6474134+02:00"
+generated: "2022-05-03T10:30:07.8679349+02:00"
