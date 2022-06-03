@@ -242,6 +242,35 @@ entries:
     urls:
     - https://github.com/fabianmp/hsds-viewer/releases/download/v0.1.0/hsds-viewer-0.1.0.tgz
     version: 0.1.0
+  penpot:
+  - apiVersion: v2
+    appVersion: 1.13.1-beta
+    created: "2022-06-03T16:47:36.5760546+02:00"
+    dependencies:
+    - name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.5.0
+    - name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.10.0
+    description: A Helm chart for penpot.app
+    digest: 948d8b78a5509bd593cccbab4e7f7ca57dbd142664ce7a82483ea0794d0b73c5
+    home: https://penpot.app/
+    keywords:
+    - penpot
+    - penpot.app
+    - design
+    maintainers:
+    - email: fabian.zach@methodpark.de
+      name: Fabian Zach
+      url: https://github.com/fabianmp
+    name: penpot
+    sources:
+    - https://github.com/fabianmp/penpot-helm
+    type: application
+    urls:
+    - https://github.com/fabianmp/penpot-helm/releases/download/v0.1.0/penpot-0.1.0.tgz
+    version: 0.1.0
   taiga:
   - apiVersion: v2
     appVersion: 6.4.2
@@ -513,4 +542,4 @@ entries:
     urls:
     - https://github.com/fabianmp/taiga-helm/releases/download/v0.1.0/taiga-0.1.0.tgz
     version: 0.1.0
-generated: "2022-05-23T15:54:01.7118098+02:00"
+generated: "2022-06-03T16:47:36.5760988+02:00"
