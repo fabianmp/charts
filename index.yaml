@@ -271,6 +271,27 @@ entries:
     urls:
     - https://github.com/fabianmp/penpot-helm/releases/download/v0.1.0/penpot-0.1.0.tgz
     version: 0.1.0
+  startpage:
+  - apiVersion: v2
+    created: "2022-08-16T16:40:10.5683945+02:00"
+    description: A Helm chart for a simple portal page
+    digest: c2f4eb10447caf576ece6967912c48b0a7a89e7a225dd6f2256484741b6445ca
+    home: https://github.com/fabianmp/startpage
+    keywords:
+    - portal
+    - start page
+    - landing page
+    maintainers:
+    - email: fabian.zach@methodpark.de
+      name: Fabian Zach
+      url: https://github.com/fabianmp
+    name: startpage
+    sources:
+    - https://github.com/fabianmp/startpage
+    type: application
+    urls:
+    - https://github.com/fabianmp/startpage/releases/download/v0.1.0/startpage-0.1.0.tgz
+    version: 0.1.0
   taiga:
   - apiVersion: v2
     appVersion: 6.4.2
@@ -542,4 +563,4 @@ entries:
     urls:
     - https://github.com/fabianmp/taiga-helm/releases/download/v0.1.0/taiga-0.1.0.tgz
     version: 0.1.0
-generated: "2022-06-03T16:47:36.5760988+02:00"
+generated: "2022-08-16T16:40:10.5684492+02:00"
