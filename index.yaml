@@ -244,6 +244,34 @@ entries:
     version: 0.1.0
   penpot:
   - apiVersion: v2
+    appVersion: 1.19.0
+    created: "2023-08-08T16:50:52.644187233+02:00"
+    dependencies:
+    - name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.8.0
+    - name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 17.14.6
+    description: A Helm chart for penpot.app
+    digest: 37bc00602322309ae65c2dbae7d7c1f18d7c4676c544497b9a0da78dccaf9c2f
+    home: https://penpot.app/
+    keywords:
+    - penpot
+    - penpot.app
+    - design
+    maintainers:
+    - email: fabian.zach@methodpark.de
+      name: Fabian Zach
+      url: https://github.com/fabianmp
+    name: penpot
+    sources:
+    - https://github.com/fabianmp/penpot-helm
+    type: application
+    urls:
+    - https://github.com/fabianmp/penpot-helm/releases/download/v0.3.0/penpot-0.3.0.tgz
+    version: 0.3.0
+  - apiVersion: v2
     appVersion: 1.16.2-beta
     created: "2023-01-13T11:31:55.842545836+01:00"
     dependencies:
@@ -591,4 +619,4 @@ entries:
     urls:
     - https://github.com/fabianmp/taiga-helm/releases/download/v0.1.0/taiga-0.1.0.tgz
     version: 0.1.0
-generated: "2023-01-13T11:31:55.842594536+01:00"
+generated: "2023-08-08T16:50:52.644254933+02:00"
