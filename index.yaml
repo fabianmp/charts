@@ -329,6 +329,26 @@ entries:
     version: 0.1.0
   startpage:
   - apiVersion: v2
+    created: "2024-01-10T15:58:54.893161717+01:00"
+    description: A Helm chart for a simple portal page
+    digest: f30f95e7de74fe93138cc96f0560ab2b3fff401c6d5b0535450e9d777f7b5041
+    home: https://github.com/fabianmp/startpage
+    keywords:
+    - portal
+    - start page
+    - landing page
+    maintainers:
+    - email: fabian.zach@methodpark.de
+      name: Fabian Zach
+      url: https://github.com/fabianmp
+    name: startpage
+    sources:
+    - https://github.com/fabianmp/startpage
+    type: application
+    urls:
+    - https://github.com/fabianmp/startpage/releases/download/v0.1.2/startpage-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
     created: "2024-01-10T15:24:40.672184838+01:00"
     description: A Helm chart for a simple portal page
     digest: f21b3a1f5922a6da71797d64c5aee70e7e14483aa0a2cc87a64a8693237e425f
@@ -639,4 +659,4 @@ entries:
     urls:
     - https://github.com/fabianmp/taiga-helm/releases/download/v0.1.0/taiga-0.1.0.tgz
     version: 0.1.0
-generated: "2024-01-10T15:24:40.672340092+01:00"
+generated: "2024-01-10T15:58:54.893247686+01:00"
