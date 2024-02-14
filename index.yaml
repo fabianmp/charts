@@ -390,6 +390,66 @@ entries:
     version: 0.1.0
   taiga:
   - apiVersion: v2
+    appVersion: 6.7.1
+    created: "2024-02-14T15:31:41.263673459+01:00"
+    dependencies:
+    - name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 14.0.2
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.10.0
+    description: A Helm chart for Taiga
+    digest: e48eaed00e0c65a482d17a2f02493e8378d9d5ca7957f9559bdf2fe1c33438d5
+    home: https://www.taiga.io/
+    keywords:
+    - taiga
+    - taiga.io
+    - scrum
+    - kanban
+    - project management
+    maintainers:
+    - email: fabian.zach@methodpark.de
+      name: Fabian Zach
+      url: https://github.com/fabianmp
+    name: taiga
+    sources:
+    - https://github.com/fabianmp/taiga-helm
+    type: application
+    urls:
+    - https://github.com/fabianmp/taiga-helm/releases/download/v0.6.0/taiga-0.6.0.tgz
+    version: 0.6.0
+  - apiVersion: v2
+    appVersion: 6.7.1
+    created: "2024-02-14T15:31:41.112474429+01:00"
+    dependencies:
+    - name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 14.0.2
+    - name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.10.0
+    description: A Helm chart for Taiga
+    digest: 4ff186aa875720eefcae3bdf2282f94046cbaf19aeae23306eea5dd8f6794b19
+    home: https://www.taiga.io/
+    keywords:
+    - taiga
+    - taiga.io
+    - scrum
+    - kanban
+    - project management
+    maintainers:
+    - email: fabian.zach@methodpark.de
+      name: Fabian Zach
+      url: https://github.com/fabianmp
+    name: taiga
+    sources:
+    - https://github.com/fabianmp/taiga-helm
+    type: application
+    urls:
+    - https://github.com/fabianmp/taiga-helm/releases/download/v0.5.0/taiga-0.5.0.tgz
+    version: 0.5.0
+  - apiVersion: v2
     appVersion: 6.4.2
     created: "2024-02-08T13:20:51.525348402+01:00"
     dependencies:
@@ -689,4 +749,4 @@ entries:
     urls:
     - https://github.com/fabianmp/taiga-helm/releases/download/v0.1.0/taiga-0.1.0.tgz
     version: 0.1.0
-generated: "2024-02-08T13:20:51.525410488+01:00"
+generated: "2024-02-14T15:31:41.263748434+01:00"
