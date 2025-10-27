@@ -244,6 +244,34 @@ entries:
     version: 0.1.0
   penpot:
   - apiVersion: v2
+    appVersion: 2.10.1
+    created: "2025-10-27T15:53:54.738289415+01:00"
+    dependencies:
+    - name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.7.27
+    - name: valkey
+      repository: https://valkey.io/valkey-helm/
+      version: 0.7.6
+    description: A Helm chart for penpot.app
+    digest: 95c3c90bf5cee76e19454dfc7409000caa9cad0a6898f7dac985e4612b4188b9
+    home: https://penpot.app/
+    keywords:
+    - penpot
+    - penpot.app
+    - design
+    maintainers:
+    - email: fabian.zach@ul.com
+      name: Fabian Zach
+      url: https://github.com/fabianmp
+    name: penpot
+    sources:
+    - https://github.com/fabianmp/penpot-helm
+    type: application
+    urls:
+    - https://github.com/fabianmp/penpot-helm/releases/download/v0.5.0/penpot-0.5.0.tgz
+    version: 0.5.0
+  - apiVersion: v2
     appVersion: 2.0.1
     created: "2024-04-25T16:15:35.410686394+02:00"
     dependencies:
@@ -807,4 +835,4 @@ entries:
     urls:
     - https://github.com/fabianmp/taiga-helm/releases/download/v0.1.0/taiga-0.1.0.tgz
     version: 0.1.0
-generated: "2024-09-03T16:07:17.111798932+02:00"
+generated: "2025-10-27T15:53:54.738383422+01:00"
